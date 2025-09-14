@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="'https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/header.png">
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Vincent</div>
+          <!-- Menu Toggle Button (☰) -->
+  <div class="menu-toggle">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="night-mode" onclick="toggleNightMode()">🌙</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <canvas id="backgroundCanvas"></canvas>
+            <div class="hero-content">
+        <div class="social-links">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vincent-corpes-jr-b7b743375/" target="_blank"
+              ><i class="fab fa-linkedin scroll-reveal"></i
+            ></a>
+            <a href="https://github.com/vncetn" target="_blank"
+              ><i class="fab fa-github scroll-reveal"></i
+            ></a>
+            <a href="https://www.instagram.com/vncetn/" target="_blank"
+              ><i class="fab fa-instagram scroll-reveal"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <h1 class="scroll-reveal">WELCOME ^.^ </h1>
+          <h2 id="typing-text">Cute</h2>
+          <p class="scroll-reveal">
+            Hi! I'm Vincent Corpes Jr., a 3rd Year BSCS student at West
+            Visayas State University, passionate about graphic design, web, and
+            mobile development. I love crafting visually appealing designs and
+            transforming them into functional, user-friendly digital
+            experiences.
+          </p>
+          <a href="#contact" class="contact-btn">Contact Me</a>
+        </div>
+
+        <div class="hero-image scroll-reveal">
+          <img src="assets/bins.png" alt="Vincent Corpes Jr." />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section scroll-reveal">
+      <!-- Section Title -->
+      <div class="section-header scroll-reveal">
+        <h2>About Me</h2>
+        <p>My Introduction</p>
+      </div>
+
+      <!-- Content Container -->
+      <div class="about-content">
+        <!-- Image Row -->
+        <div class="about-image scroll-reveal">
+          <img src="assets/intro.jpg" alt="Intro Stad" />
+        </div>
+
+        <!-- Text Row -->
+        <div class="about-text scroll-reveal">
+          <p>
+         I’m a graphic designer who loves doing creative work — 
+         from publication materials to UI/UX design. I’ve collaborated with 
+         5+ organizations, created 10+ publication materials, completed 10+ 
+         commissions, and captured moments through photography projects.
+            <br /><br />
+
+         I also handle UI/UX quality assurance to make sure every design is smooth 
+         and user-friendly. Creativity drives me to keep learning, improving my craft, 
+         and exploring new ways to tell stories visually — whether through design or photography.
+          </p>
+
+          <!-- Experience Stats -->
+    <div class="stats">
+  <div class="stat-box scroll-reveal">
+    <h3>5+</h3>
+    <p>Organizations (Acad & Non-Acad)</p>
+  </div>
+  <div class="stat-box scroll-reveal">
+    <h3>10+</h3>
+    <p>Publication Materials Created</p>
+  </div>
+  <div class="stat-box scroll-reveal">
+    <h3>10+</h3>
+    <p>Commissions Completed</p>
+  </div>
+</div>
+
+<!-- Download Resume Button -->
+<a href="assets" download="N/A">
+    <button class="resume-btn scroll-reveal">Download Resume</button>
+</a>
+
+        </div>
+      </div>
+    </section>
+
+<section id="skills" class="scroll-reveal">
+  <div class="section-header">
+    <h2>Skills</h2>
+    <p>Based on my Creative & Technical Experience</p>
+  </div>
+
+  <div class="skills-container">
+    <!-- Column 1: Graphic Design -->
+    <div class="skill-column scroll-reveal">
+      <div class="skill-header">
+        <i class="fa-solid fa-palette work-icon"></i>
+        <h3 class="skill-title">Graphic Design</h3>
+      </div>
+
+      <div class="skill-item"><div class="skill"><span>Photoshop</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>Illustrator</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>InDesign</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>Canva</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+    </div>
+
+    <!-- Column 2: Multimedia & Photography -->
+    <div class="skill-column scroll-reveal">
+      <div class="skill-header">
+        <i class="fa-solid fa-camera work-icon"></i>
+        <h3>Multimedia & Photography</h3>
+      </div>
+
+      <div class="skill-item"><div class="skill"><span>Lightroom</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>Premiere Pro</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>CapCut</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>Photography</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+    </div>
+
+    <!-- Column 3: UI/UX & Web Design -->
+    <div class="skill-column scroll-reveal">
+      <div class="skill-header">
+        <i class="fa-solid fa-desktop work-icon"></i>
+        <h3>UI/UX & Web Design</h3>
+      </div>
+
+      <div class="skill-item"><div class="skill"><span>Figma</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+      <div class="skill-item"><div class="skill"><span>HTML & CSS</span><span>0%</span></div><div class="skill-bar"><div class="skill-fill" style="width: 0%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="education" class="scroll-reveal">
+        <div class="section-header">
+            <h2>Education</h2>
+            <p>My Academic Journey</p>
+        </div>
+    
+        <div class="timeline">
+            <!-- Blue Dots -->
+            <div class="timeline-dot" id="dot1"></div>
+            <div class="timeline-dot" id="dot2"></div>
+            <div class="timeline-dot" id="dot3"></div>
+    
+            <!-- Timeline Items -->
+            <div class="timeline-item left scroll-reveal">
+                <h3>CABATUAN NATIONAL COMPREHENSIVE HIGH SCHOOL</h3>
+                <p>Junior High School</p>
+            </div>
+    
+            <div class="timeline-item right scroll-reveal">
+                <h3>CABATUAN NATIONAL COMPREHENSIVE HIGH SCHOOL</h3>
+                <p>Senior High School <br> STEM</p>
+            </div>
+    
+            <div class="timeline-item left scroll-reveal">
+                <h3>West Visayas State University</h3>
+                <p>BS in Computer Science <br> Major in Artificial Intelligence</p>
+            </div>
+        </div>
+    
+    </section>
+    
+<section id="services" class="scroll-reveal">
+  <div class="section-header">
+    <h2>Services</h2>
+    <p>What I Can Do for You</p>
+  </div>
+
+  <div class="services-container">
+    <!-- Graphic Design Card -->
+    <div class="service-card scroll-reveal">
+      <i class="fas fa-palette"></i>
+      <h3>Graphic Design</h3>
+      <button class="view-more" data-modal="modal-graphic">
+        View More <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- UI/UX & Web Design Card -->
+    <div class="service-card scroll-reveal">
+      <i class="fas fa-paint-brush"></i>
+      <h3>UI/UX & Web Design</h3>
+      <button class="view-more" data-modal="modal-uiux">
+        View More <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Photography Card -->
+    <div class="service-card scroll-reveal">
+      <i class="fas fa-camera"></i>
+      <h3>Photography</h3>
+      <button class="view-more" data-modal="modal-photo">
+        View More <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Graphic Design -->
+<div id="modal-graphic" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Graphic Design</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Social Media Posts & Banners</li>
+      <li><i class="fas fa-check-circle"></i> Posters, Flyers, & Publication Materials</li>
+      <li><i class="fas fa-check-circle"></i> Logos & Branding Assets</li>
+      <li><i class="fas fa-check-circle"></i> Creative Layouts (Print & Digital)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal for UI/UX & Web Design -->
+<div id="modal-uiux" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>UI/UX & Web Design</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Wireframes & Mockups</li>
+      <li><i class="fas fa-check-circle"></i> Interactive Prototypes</li>
+      <li><i class="fas fa-check-circle"></i> Visual Design Systems</li>
+      <li><i class="fas fa-check-circle"></i> HTML & CSS Implementation</li>
+      <li><i class="fas fa-check-circle"></i> Landing Pages & Portfolios</li>
+      <li><i class="fas fa-check-circle"></i> Basic Interactive Elements</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal for Photography -->
+<div id="modal-photo" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Photography</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Portrait Photography</li>
+      <li><i class="fas fa-check-circle"></i> Event Coverage</li>
+      <li><i class="fas fa-check-circle"></i> Product & Branding Shots</li>
+      <li><i class="fas fa-check-circle"></i> Photo Editing & Retouching</li>
+    </ul>
+  </div>
+</div>
+
+
+        <section id="portfolio" class="scroll-reveal">
+    <div class="section-header">
+        <h2>Portfolio</h2>
+        <p>Most recent work</p>
+    </div>
+
+<div class="carousel-container scroll-reveal">
+    <button class="carousel-arrow left-arrow">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel">
+        <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-item scroll-reveal">
+                <img src="assets/project1.png" alt="Project Image">
+                <div class="project-details">
+                    <h3>Organization Works</h3>
+                    <p>Created posters, event teasers, and digital layouts for DOST SAIS, WVSU ADS, CIPHER, 
+                      ArangKADA Initiatives, Spark Hub, and Batch Nexus, promoting events, programs, and campaigns.</p>
+                    <a href="projects/project1.html"><button class="preview-btn">Preview</button></a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item scroll-reveal">
+                <img src="assets/project2.png" alt="Project Image">
+                <div class="project-details">
+                    <h3>Commissions</h3>
+                    <p>Designed custom logos, social media templates, and creative layouts for individuals, 
+                      small businesses, and content creators based on their unique branding needs.</p>
+                    <a href="projects/project2.html"><button class="preview-btn">Preview</button></a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item scroll-reveal">
+                <img src="assets/project3.png" alt="Project Image">
+                <div class="project-details">
+                    <h3>Photography</h3>
+                    <p>Captured portraits, event highlights, and product shots, with post-processing and color enhancement to bring out the best visual storytelling.</p>
+                    <a href="projects/project3.html"><button class="preview-btn">Preview</button></a>
+                </div>
+            </div>
+
+
+                 <div class="carousel-item scroll-reveal">
+                <img src="assets/project4.png" alt="Project Image">
+                <div class="project-details">
+                    <h3>School Works</h3>
+                    <p>Created school projects including websites, advocacy videos, and other academic outputs — highlighting creativity, functionality, and problem-solving.</p>
+                    <a href="projects/project4.html"><button class="preview-btn">Preview</button></a>
+                </div>
+            </div>
+
+          
+        
+
+        
+          
+
+          
+
+        </div>
+    </div>
+
+    <button class="carousel-arrow right-arrow">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>
+
+<!-- Navigation Dots -->
+<div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact-section scroll-reveal">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <p>Get in touch</p>
+    </div>
+  
+  <div class="contact-container">
+    <!-- Left Side (Contact Info) -->
+    <div class="contact-info scroll-reveal">
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h3>Mobile Number</h3>
+          <p>+63-9493417104 </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p>vcorpesjr@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Location</h3>
+          <p>Philippines, Iloilo City</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side (Contact Form) -->
+    <div class="contact-form scroll-reveal">
+      <form action="https://formsubmit.co/vcorpesjr@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        
+        <!-- Optional Hidden Fields -->
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+    
+    <footer>
+  <div class="footer-container">
+    <!-- Column 1: Logo & Title -->
+    <div class="footer-column">
+      <h2 class="footer-logo">Vincent</h2>
+      <p>Graphic Designer</p>
+    </div>
+
+    <!-- Column 2: Copyright -->
+    <div class="footer-column">
+      <p>© 2025 Vincent L. Corpes Jr. All rights reserved.</p>
+    </div>
+
+    <!-- Column 3: Social Icons -->
+    <div class="footer-column social-links-footer">
+      <a href="https://www.linkedin.com/in/vincent-corpes-jr-b7b743375/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/vncetn" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/vncetn/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

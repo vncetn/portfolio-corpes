@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Works</title>
+    <link rel="stylesheet" href="p1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/header.png">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+      <div class="logo">Vincent</div>
+                <!-- Menu Toggle Button (☰) -->
+  <div class="menu-toggle">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#portfolio">Portfolio</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li id="mode-icon" onclick="toggleNightMode()">🌙</li>
+      </ul>
+    </nav>
+</header>
+
+<section class="project-wrapper">
+    <a href="../index.html#portfolio" class="go-back-btn">
+        <i class="fas fa-arrow-left"></i> Go Back
+    </a>
+    
+    <div class="project-header">
+        <h1>Organization Works</h1>
+        <p class="project-tagline">A collection of posters, banners, and event materials created for academic and non-academic organizations to promote activities and campaigns.</p>
+    </div>
+
+    <div class="project-content">
+        <div class="project-info-box">
+            <h2>DOST Scholars' Association in Region VI</h2>
+            <p>Creatives Committee Member 23-25</p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+        <div class="screenshot-container">
+            <img src="cm/cm1.png" alt="Screenshot 1">
+        </div>
+
+         <div class="project-content">
+        <div class="project-info-box">
+            <h2>WVSU Association of DOST Scholars </h2>
+            <p> Vice Chairperson: Internal Affairs 24-25</p>
+            <p> Creatives Committee Member 25-26</p>
+            <p> Creatives Committee Member 23-24 </p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+    
+        <div class="screenshot-container">
+            <img src="cm/cm2.png" alt="Screenshot 1">
+        </div>
+
+
+    
+         <div class="project-content">
+        <div class="project-info-box">
+            <h2>ArangKADA Initiatives</h2>
+            <p>Creatives Committee Head 25-26</p>
+            <p>Creatives Committee Member 24-25</p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+    
+        <div class="screenshot-container">
+            <img src="cm/cm3.png" alt="Screenshot 1">
+        </div>
+
+
+
+         <div class="project-content">
+        <div class="project-info-box">
+            <h2>CIPHER</h2>
+            <p>Secretary 25-26</p>
+            <p>Asst. Secretary 24-25</p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+    
+        <div class="screenshot-container">
+            <img src="cm/cm4.png" alt="Screenshot 1">
+        </div>
+
+
+
+
+         <div class="project-content">
+        <div class="project-info-box">
+            <h2>Batch Nexus</h2>
+            <p>Secretary 25-26</p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+    
+        <div class="screenshot-container">
+            <img src="cm/cm5.png" alt="Screenshot 1">
+        </div>
+
+
+
+
+        
+
+         <div class="project-content">
+        <div class="project-info-box">
+            <h2>Spark Hub</h2>
+            <p>Creatives Commitee Member 25-26</p>
+        </div>
+
+
+    </div>
+
+    <div class="project-screenshots">
+    
+        <div class="screenshot-container">
+            <img src="cm/cm6.png" alt="Screenshot 1">
+        </div>
+
+
+
+
+
+    </div>
+
+ 
+    <!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+</section>
+
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+
+  function toggleNightMode() {
+      const body = document.body;
+      const icon = document.getElementById("mode-icon");
+  
+      // Toggle night mode class
+      body.classList.toggle("night-mode");
+  
+      // Check if night mode is active
+      if (body.classList.contains("night-mode")) {
+          icon.innerHTML = "☀️"; // Change to sun icon
+          localStorage.setItem("theme", "dark");
+      } else {
+          icon.innerHTML = "🌙"; // Change to moon icon
+          localStorage.setItem("theme", "light");
+      }
+  }
+  
+  // Apply saved theme on page load
+  window.onload = function () {
+      const savedTheme = localStorage.getItem("theme");
+      const body = document.body;
+      const icon = document.getElementById("mode-icon");
+  
+      if (savedTheme === "dark") {
+          body.classList.add("night-mode");
+          icon.innerHTML = "☀️"; // Show sun icon if dark mode is on
+      } else {
+          body.classList.remove("night-mode");
+          icon.innerHTML = "🌙"; // Show moon icon if light mode is on
+      }
+  };
+
+  // Scroll to Top Button Functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+
+    // Show button when scrolling down
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = "flex";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
+
+    // Scroll back to the top smoothly
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+  </script>
+  
+
+</body>
+
+</html>
