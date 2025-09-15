@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+
 }
 
 html {
@@ -23,7 +27,8 @@ html {
 
   background-blend-mode: lighten;
   color: #333;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(30px, 2vw, 50px);
+  
 }
 
 html::before {
@@ -69,7 +74,7 @@ canvas {
 
 /* Logo */
 .logo {
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
 }
@@ -91,12 +96,12 @@ canvas {
 .nav-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #242526;
+  color: #186b18;
 }
 
 /* Menu Toggle Icon (☰) */
@@ -119,7 +124,7 @@ canvas {
     top: 60px;
     left: 0;
     width: 100%;
-    background: #022902;
+    background: #186b18;
     flex-direction: column;
     text-align: center;
     padding: 20px 0;
@@ -233,7 +238,7 @@ canvas {
 }
 
 .hero-text p {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 10px;
 }
 
@@ -272,7 +277,7 @@ canvas {
 }
 
 #typing-text::after {
-  content: "|";
+  content: ".";
   display: inline-block;
   animation: blink 0.7s infinite;
 }
@@ -332,12 +337,12 @@ canvas {
 }
 
 .section-header h2 {
-  font-size: clamp(1.8rem, 4vw, 2rem);
+  font-size: 30px;
   font-weight: 700;
 }
 
 .section-header p {
-  font-size: 1.2rem;
+  font-size: 300px ;
   color: #555;
 }
 
@@ -348,7 +353,7 @@ canvas {
   justify-content: center;
   gap: 40px;
   padding: 20px;
-  font-size: 15px;
+  font-size: 20px;
   margin-top: -30px;
 }
 
@@ -474,16 +479,22 @@ canvas {
   text-align: left;
   justify-content: flex-start;
   padding-bottom: 20px;
+  
 }
 
 .skill-header h3 {
-  margin-left: 10px;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-left: 20px;
+  font-size: 30 px;
+}
+
+.skill-header p {
+  margin-left: 20px;
+  font-size: 10 px;
 }
 
 /* Icon Styling */
 .work-icon {
-  font-size: 35px;
+  font-size: 30px;
   color: #022902;
 }
 
@@ -501,7 +512,7 @@ canvas {
   justify-content: space-between;
   font-weight: 500;
   color: #242526;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(19px, 2vw, 24px);
 }
 
 /* Skill Bars */
@@ -568,9 +579,13 @@ canvas {
   text-align: center;
 }
 
+.section-header h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
 /* Section Header */
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -615,6 +630,12 @@ canvas {
 
 .timeline-item.left h3 {
   color: #022902;
+  font-size: 25px;
+}
+
+.timeline-item.left p {
+  color: #022902;
+  font-size: 20px;
 }
 
 /* Right Side */
@@ -627,6 +648,12 @@ canvas {
 
 .timeline-item.right h3 {
   color: #022902;
+  font-size: 25px;
+}
+
+.timeline-item.right p {
+  color: #022902;
+  font-size: 20px;
 }
 
 /* Timeline Dots (Circles) */
@@ -726,7 +753,7 @@ canvas {
 
 /* Service Title */
 .service-card h3 {
-  font-size: 1.4rem;
+  font-size: 25px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 15px;
@@ -794,7 +821,7 @@ canvas {
 
 /* Modal Title */
 .modal h2 {
-  font-size: 1.8rem;
+  font-size: 30px;
   color: #242526;
 }
 
@@ -805,7 +832,7 @@ canvas {
 }
 
 .modal ul li {
-  font-size: 1rem;
+  font-size: 20px;
   margin: 10px 0;
   display: flex;
   align-items: center;
@@ -973,13 +1000,13 @@ canvas {
 }
 
 .project-details h3 {
-  font-size: 1.5rem;
+  font-size: 30px;
   color: #242526;
   margin-bottom: 10px;
 }
 
 .project-details p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #666;
   margin-bottom: 20px;
   line-height: 1.4;
@@ -1182,13 +1209,13 @@ canvas {
 }
 
 .contact-item h3 {
-  font-size: 1.2rem;
+  font-size: 30px;
   margin-bottom: 5px;
   text-align: left;
 }
 
 .contact-item p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #555;
 }
 
@@ -1211,7 +1238,7 @@ canvas {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 .contact-form button {
@@ -1230,7 +1257,7 @@ canvas {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #022902;
 }
 
 .contact-form i {
@@ -1271,7 +1298,7 @@ footer {
 
 /* Footer Logo */
 .footer-logo {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bold;
   display: block;
   text-align: left;
@@ -1321,6 +1348,7 @@ footer {
 
   .footer-column p {
     text-align: center;
+    font-size: 10px;
   }
 
   .social-links-footer {
