@@ -16,9 +16,23 @@ html {
   width: 100%;
   min-height: 100dvh; /* Dynamic viewport height */
   overflow-x: hidden;
-  background: #f5f5f5; /* Same as your background */
+  background: url("bg.jpg") ;
+   background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("bg.jpg") ;
+
+  background-blend-mode: lighten;
   color: #333;
   font-size: clamp(14px, 2vw, 16px);
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("bg.jpg") center/cover no-repeat;
+  opacity: 0.5; /* Only the background image is transparent */
+  z-index: -1; /* Keep it behind all page content */
 }
 
 .container {
@@ -425,7 +439,6 @@ canvas {
 #skills {
   text-align: center;
   padding: 50px 5%;
-  background: #fff;
   margin-top: 80px;
   margin-bottom: 50px;
 }
@@ -552,7 +565,6 @@ canvas {
 /* EDUCATION */
 #education {
   padding: 50px 5%;
-  background: #f5f5f5;
   text-align: center;
 }
 
@@ -668,7 +680,6 @@ canvas {
 /* SERVICES */
 #services {
   padding: 50px 5%;
-  background: #fff;
   text-align: center;
   padding-bottom: 1.5in;
 }
@@ -858,7 +869,6 @@ canvas {
 
 #portfolio {
   padding: 50px 5%;
-  background: #fff;
   text-align: center;
 }
 
@@ -1123,10 +1133,10 @@ canvas {
 .contact-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f5f5f5;
   margin-top: 50px;
   margin-bottom: 70px;
 }
+
 
 .contact-section h2 {
   font-size: 2rem;
